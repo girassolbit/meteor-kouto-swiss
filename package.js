@@ -7,13 +7,12 @@ Package.describe({
 });
 
 Package.onUse(function(api) {
-  api.versionsFrom('METEOR@1.0');
+  api.versionsFrom(['METEOR@0.9.0', 'METEOR@1.0', 'METEOR@1.1.0.2']);
   api.use('stylus');
 });
 
 Package.onTest(function(api) {
-  api.use('tinytest');
-  api.use('girassolbit:meteor-kouto-swiss');
+  api.use(['tinytest','girassolbit:meteor-kouto-swiss']);
   api.addFiles('kouto-swiss-tests.js', 'client');
 });
 
