@@ -7,7 +7,7 @@ Package.describe({
 });
 
 Package.onUse(function(api) {
-  api.addFiles('meteor-kouto-swiss.js');
+  api.versionsFrom('METEOR@1.0');
 });
 
 Package.onTest(function(api) {
@@ -17,5 +17,5 @@ Package.onTest(function(api) {
 });
 
 Npm.depends({
-
+  'kouto-swiss' : '0.11.11'
 });
