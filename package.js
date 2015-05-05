@@ -1,8 +1,8 @@
 Package.describe({
-  name: 'charlenopires:meteor-kouto-swiss',
+  name: 'girassolbit:meteor-kouto-swiss',
   version: '0.0.1',
   summary: 'A complete CSS framework for Stylus',
-  git: 'https://github.com/charlenopires/meteor-kouto-swiss.git',
+  git: 'https://github.com/girassolbit/meteor-kouto-swiss.git',
   documentation: 'README.md'
 });
 
@@ -12,7 +12,7 @@ Package.onUse(function(api) {
 
 Package.onTest(function(api) {
   api.use('tinytest');
-  api.use('charlenopires:meteor-kouto-swiss');
+  api.use('girassolbit:meteor-kouto-swiss');
   api.addFiles('kouto-swiss-tests.js', 'client');
 });
 
