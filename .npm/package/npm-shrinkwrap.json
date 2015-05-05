@@ -1,0 +1,72 @@
+{
+  "dependencies": {
+    "kouto-swiss": {
+      "version": "0.11.11",
+      "dependencies": {
+        "prefiks": {
+          "version": "0.3.3",
+          "dependencies": {
+            "caniuse-db": {
+              "version": "1.0.30000156"
+            },
+            "lodash": {
+              "version": "2.4.2"
+            },
+            "semver": {
+              "version": "4.3.4"
+            }
+          }
+        },
+        "stylus": {
+          "version": "0.50.0",
+          "dependencies": {
+            "css-parse": {
+              "version": "1.7.0"
+            },
+            "mkdirp": {
+              "version": "0.3.5"
+            },
+            "debug": {
+              "version": "2.1.3",
+              "dependencies": {
+                "ms": {
+                  "version": "0.7.0"
+                }
+              }
+            },
+            "sax": {
+              "version": "0.5.8"
+            },
+            "glob": {
+              "version": "3.2.11",
+              "dependencies": {
+                "inherits": {
+                  "version": "2.0.1"
+                },
+                "minimatch": {
+                  "version": "0.3.0",
+                  "dependencies": {
+                    "lru-cache": {
+                      "version": "2.6.2"
+                    },
+                    "sigmund": {
+                      "version": "1.0.0"
+                    }
+                  }
+                }
+              }
+            },
+            "source-map": {
+              "version": "0.1.43",
+              "dependencies": {
+                "amdefine": {
+                  "version": "0.1.0"
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
