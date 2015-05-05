@@ -8,4 +8,4 @@ Usage
 
 Add the [`stylus`](https://atmospherejs.com/meteor/stylus) package to your project. Then add this import to the top of your main `.styl` file(s):
 
-    @import 'kouto-swiss'
+    @import kouto-swiss'

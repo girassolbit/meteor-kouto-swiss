@@ -1,6 +1,6 @@
 Package.describe({
   name: 'girassolbit:meteor-kouto-swiss',
-  version: '0.0.1',
+  version: '0.0.2',
   summary: 'A complete CSS framework for Stylus',
   git: 'https://github.com/girassolbit/meteor-kouto-swiss.git',
   documentation: 'README.md'
@@ -8,6 +8,7 @@ Package.describe({
 
 Package.onUse(function(api) {
   api.versionsFrom('METEOR@1.0');
+  api.use('stylus');
 });
 
 Package.onTest(function(api) {
