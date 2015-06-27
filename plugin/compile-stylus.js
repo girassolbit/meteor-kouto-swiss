@@ -13,7 +13,8 @@ var axis = Npm.require('axis');
 
 Plugin.registerSourceHandler("styl", {archMatching: 'web'}, function (compileStep) {
   var f = new Future;
-  stylus(compileStep.read().toString('utf8'))
+  /*stylus(compileStep.read().toString('utf8'))*/
+  stylus(compileStep.read())
     .use(koutoSwiss())
     .use(nib())
     .use(autoprefixer())

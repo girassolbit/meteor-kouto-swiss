@@ -1,6 +1,6 @@
 Package.describe({
   name: 'girassolbit:meteor-kouto-swiss',
-  version: '0.0.3',
+  version: '0.0.4',
   summary: 'A complete package to work with Stylus using KoutoSwiss + Jeet + Rupture + Axis + AutoPrefixer + Nib',
   git: 'https://github.com/girassolbit/meteor-kouto-swiss.git',
   documentation: 'README.md'
