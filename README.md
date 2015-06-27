@@ -1,5 +1,4 @@
 ## Meteor Kouto Swiss - Package for Kouto Swiss - A complete CSS Framework
-***
 
 This is a complete Meteor package to work with Stylus, using:
  * [Kouto Swiss](http://kouto-swiss.io), a complete css framework for Stylus;
