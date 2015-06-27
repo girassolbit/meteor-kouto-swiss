@@ -45,7 +45,7 @@ Package.onTest(function(api) {
     'tests/import.styl',
     'tests/relative.import.styl',
     'tests/absolute.import.styl',
-    'tests/koutoswiss_.styl',
+    'tests/koutoswiss.import.styl',
     'tests/tinytest.js'
   ],'client');
 });
