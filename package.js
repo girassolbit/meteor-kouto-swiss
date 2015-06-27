@@ -6,11 +6,11 @@ Package.describe({
   documentation: 'README.md'
 });
 
-Package.onUse(function(api) {
+/*Package.onUse(function(api) {
   api.versionsFrom(['METEOR@0.9.0', 'METEOR@1.0', 'METEOR@1.1.0.2']);
   api.use('stylus');
   console.log(api);
-});
+});*/
 
 Package._transitional_registerBuildPlugin({
   name: 'compileStylus',
@@ -29,7 +29,7 @@ Package._transitional_registerBuildPlugin({
   }
 });
 
-Npm.depends({
+/*Npm.depends({
   'stylus': '0.51.1',
   'kouto-swiss': '0.11.12',
   'nib': '1.1.0',
@@ -39,7 +39,7 @@ Npm.depends({
   'axis': '0.4.1'
 });
 
-/*Package.onTest(function(api) {
+Package.onTest(function(api) {
   api.use(['tinytest','girassolbit:meteor-kouto-swiss', 'test-helpers']);
   api.add_files([
     'tests/main.styl',
