@@ -1,7 +1,7 @@
 Package.describe({
   name: 'girassolbit:meteor-kouto-swiss',
   version: '0.0.3',
-  summary: 'A complete Meteor package to work with Stylus, using Kouto Swiss - CSS Framework + Jeet + Rupture + Axis + AutoPrefixer + Nib',
+  summary: 'A complete package to work with Stylus using KoutoSwiss + Jeet + Rupture + Axis + AutoPrefixer + Nib',
   git: 'https://github.com/girassolbit/meteor-kouto-swiss.git',
   documentation: 'README.md'
 });
