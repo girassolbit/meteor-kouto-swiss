@@ -42,7 +42,7 @@ Npm.depends({
 Package.onTest(function(api) {
   api.use(['tinytest','girassolbit:meteor-kouto-swiss', 'test-helpers']);
   api.add_files([
-    'tests/import.styl',
+    'tests/main.styl',
     'tests/relative.import.styl',
     'tests/absolute.import.styl',
     'tests/koutoswiss.import.styl',
