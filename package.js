@@ -39,7 +39,7 @@ Npm.depends({
   'axis': '0.4.1'
 });
 
-Package.onTest(function(api) {
+/*Package.onTest(function(api) {
   api.use(['tinytest','girassolbit:meteor-kouto-swiss', 'test-helpers']);
   api.add_files([
     'tests/main.styl',
@@ -48,4 +48,4 @@ Package.onTest(function(api) {
     'tests/koutoswiss.import.styl',
     'tests/tinytest.js'
   ],'client');
-});
+});*/
