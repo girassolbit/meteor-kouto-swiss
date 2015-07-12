@@ -1,6 +1,8 @@
-var fs    = Npm.require('fs')
-    ,path = Npm.require('path');
-/*var Future = Npm.require('fibers/future');*/
+var fs      = Npm.require('fs')
+    ,path   = Npm.require('path')
+    // ,_      = Npm.require('lodash')
+    ,Future = Npm.require('fibers/future');
+
 // TODO: Use Promises
 
 var stylus        = Npm.require('stylus')
@@ -12,9 +14,9 @@ var stylus        = Npm.require('stylus')
     ,axis         = Npm.require('axis');
 
 function ksHandler(compileStep) {
-  var contents = compileStep.read().toString('utf8');
+  var f = new Future;
 
-  stylus(source)
+  stylus(compileStep.read().toString('utf8'))
     // plugins
     .use(kouto())
     .use(jeet())
@@ -25,20 +27,24 @@ function ksHandler(compileStep) {
     // config
     .set('filename', compileStep.inputPath)
     .set('sourcemap', {comment: false})
-    .set('compress', true);
+    .set('compress', true)
     // includes for relative and absolute imports
     .include(path.dirname(compileStep._fullInputPath)) // relative @import
-    .include(process.cwd()); // absolute @import
+    .include(process.cwd()) // absolute @import
+    .render(f.resolver());
 
-
-  if(compileStep.inputPath == "main.styl"){
-
-  }
-
-  try{
-  }catch(e){
-
-  }
+    try {
+      var css = f.wait();
+    } catch (e) {
+      compileStep.error({
+        message: "KoutoSwiss compiler error: " + e.message
+      });
+      return;
+    }
+    compileStep.addStylesheet({
+      path: compileStep.inputPath + ".css",
+      data: css
+    });
 
 };
 

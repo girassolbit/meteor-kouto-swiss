@@ -8,6 +8,7 @@ Package.describe({
 
 Package.onUse(function(api) {
   api.versionsFrom('METEOR@1.1.0.2');
+  api.use(['logging'], ['client', 'server']);
 });
 
 Package.registerBuildPlugin({
@@ -29,7 +30,8 @@ Package.registerBuildPlugin({
 });
 
 Package.onTest(function(api) {
-  api.use(['tinytest','girassolbit:meteor-kouto-swiss', 'test-helpers']);
+  api.use(['tinytest','test-helpers']);
+  api.use('girassolbit:meteor-kouto-swiss');
   api.add_files([
     'tests/main.styl',
     'tests/relative.import.styl',
