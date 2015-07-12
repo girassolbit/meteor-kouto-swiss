@@ -25,7 +25,7 @@ Package.registerBuildPlugin({
     'jeet': '6.1.2',
     'rupture': '0.6.1',
     'axis': '0.4.1',
-    'lodash': '3.10.1',
+    'lodash': '3.10.0',
     'typographic': '2.9.3'
   }
 });
