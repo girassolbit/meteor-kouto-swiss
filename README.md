@@ -6,16 +6,25 @@ This is a complete Meteor package to work with Stylus, using:
  * + [Rupture](http://jenius.github.io/rupture/), a utility for working with media queries in stylus;
  * + [Axis](http://axis.netlify.com/), a magical utility belt for stylus;
  * + [AutoPrefixer](https://github.com/jenius/autoprefixer-stylus), an autoprefixer plugin for stylus;
- * + [Nib](http://tj.github.io/nib/), a small library for providing robust cross-browser CSS3 mixins.
+ * + [Nib](http://tj.github.io/nib/), a small library for providing robust cross-browser CSS3 mixins;
+ * + [Typographic](https://github.com/corysimmons/typographic), is responsive typography made easy.
 
-Usage
----
+### Installation
+
+Install using Meteor's package management system:
+
+```bash
+> meteor add girassolbit:meteor-kouto-swiss
+```
+
+### Usage
 
 Add this import to the top of your main `.styl` file(s) in `styles` directory:
 
 ```
-    @import 'kouto-swiss'
-    @import 'jeet'
-    @import 'rupture'
-    @import 'nib'
+@import 'kouto-swiss'
+@import 'jeet'
+@import 'rupture'
+@import 'nib'
+@import 'typographic'
 ```

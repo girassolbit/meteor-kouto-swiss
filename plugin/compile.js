@@ -11,7 +11,8 @@ var stylus        = Npm.require('stylus')
     ,autoprefixer = Npm.require('autoprefixer-stylus')
     ,jeet         = Npm.require('jeet')
     ,rupture      = Npm.require('rupture')
-    ,axis         = Npm.require('axis');
+    ,axis         = Npm.require('axis')
+    ,typographic  = Npm.require('typographic');
 
 function ksHandler(compileStep) {
   var f = new Future;
@@ -24,6 +25,7 @@ function ksHandler(compileStep) {
     .use(rupture())
     .use(nib())
     .use(autoprefixer())
+    .use(typographic())
     // config
     .set('filename', compileStep.inputPath)
     .set('sourcemap', {comment: false})
