@@ -8,7 +8,7 @@ Package.describe({
 
 Package.onUse(function(api) {
   api.versionsFrom('METEOR@1.1.0.2');
-  // api.use(['logging'], ['client', 'server']);
+  api.use('logging', ['client', 'server']);
 });
 
 Package.registerBuildPlugin({
@@ -18,13 +18,13 @@ Package.registerBuildPlugin({
     'plugin/compile.js'
   ],
   npmDependencies: {
-    'stylus': '0.51.1',
+    'stylus': '0.52.0',
     'kouto-swiss': '0.11.13',
     'nib': '1.1.0',
-    'autoprefixer-stylus': '0.7.0',
+    'autoprefixer-stylus': '0.7.1',
     'jeet': '6.1.2',
     'rupture': '0.6.1',
-    'axis': '0.4.1',
+    'axis': '0.4.2',
     'lodash': '3.10.0',
     'typographic': '2.9.3'
   }

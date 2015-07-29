@@ -1,6 +1,6 @@
 var fs      = Npm.require('fs')
     ,path   = Npm.require('path')
-    // ,_      = Npm.require('lodash')
+    ,_      = Npm.require('lodash')
     ,Future = Npm.require('fibers/future');
 
 // TODO: Use Promises
