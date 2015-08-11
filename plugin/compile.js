@@ -12,7 +12,8 @@ var stylus        = Npm.require('stylus')
     ,jeet         = Npm.require('jeet')
     ,rupture      = Npm.require('rupture')
     ,axis         = Npm.require('axis')
-    ,typographic  = Npm.require('typographic');
+    ,typographic  = Npm.require('typographic')
+    ,isDevEnv     = process.env.NODE_ENV == 'development';
 
 function ksHandler(compileStep) {
   var f = new Future;
@@ -29,7 +30,8 @@ function ksHandler(compileStep) {
     // config
     .set('filename', compileStep.inputPath)
     .set('sourcemap', {comment: false})
-    .set('compress', true)
+    // just compress while production
+    .set('compress', !isDevEnv)
     // includes for relative and absolute imports
     .include(path.dirname(compileStep._fullInputPath)) // relative @import
     .include(process.cwd()) // absolute @import
